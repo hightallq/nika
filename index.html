@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ukr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NIKA Music</title>
+  <script>
+    document.querySelector(".burger").assEventListener("click", function () {
+      this.classList.toggle("active");
+      document.querySelector(".navigation").classList.toggle("open");
+    });
+  </script>
+  <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/x-icon" href="images\icon.png" />
+
+</head>
+
+<body>
+
+
+
+  <!-- NAVIGATION -->
+
+
+
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar-left">
+        <div class="navbar-logo">
+          <img src="images/footer.jpg" alt="">
+        </div>
+      </div>
+      <!-- navbar-menu -->
+      <div class="navbar-wrap">
+        <ul class="navbar-menu">
+          <li><a href="#page-one">Про нас</a></li>
+          <li><a href="#page-two">Наша команда</a></li>
+          <li><a href="#page-three">Ціни</a></li>
+          <li><a href="#page-four">Контакти</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="burger">
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+
+
+
+    <!-- ABOUT SECTION -->
+
+
+
+    <section class="about-sector">
+      <div class="about-container">
+        <div id="page-one" class="about-photo">
+          <img src="images/nike.png" alt="Нажаль фото не відкривається, перевірте підключення до інтернету" />
+        </div>
+        <div class="about-text">
+          <h1>ПРО НАС </h1>
+          <h2>NIKA — територія твоєї творчості🖤</h2>
+          <p>
+            Саме в NIKA ти знайдеш багато нових друзів, навчишся грати на
+            інструменті,
+            який тобі подобається та просто проводитимеш свій час класно.
+            Наші викладачі найцікавіші та найвеселіші. Ми жартуємо, сміємось,
+            граємо, співаємo.
+          </p>
+          <p>
+            То ж хто така НІКА? В грецькій міфології - богиня перемоги, крилата
+            покровителька тріумфу
+            і вічнасупутниця битв, вона завжди зображається крилатою або у позі
+            швидкого руху над землею.
+            В її заступництво однаково потребували воїни, учасники Олімпіад та
+            люди мистецтва.
+            Богиня Ніка, несе на крилах своїх перемогу, вона - це символ успішного
+            результату та тріумфу
+          </p>
+          <p>
+            P.S. А ще, по секрету, НіКа - це перші літери імен засновниць нашої
+            музичної студії
+          </p>
+          <span class="about-num"> Номер телефону:+380 98 972 97 70 </span>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--TEAM SECTION-->
+
+
+
+    <section id="page-two" class="team-sector">
+      <h1 class="team-name">НАША КОМАНДА</h1>
+      <div class="team-container">
+        <div class="team-content">
+          <div class="photo-container">
+            <div class="photo">
+              <img class="photo-h" src="images/image1.jpg"
+                alt="Нажаль фото не відкривається, перевірте підключення до інтернету" />
+              <h3 class="photo-about">ОЛЬГА</h3>
+              <p class="photo-about">Викладач по фортепіано</p>
+            </div>
+          </div>
+
+          <div class="photo-container">
+            <div class="photo">
+              <img class="photo-h" src="images/image2.jpg"
+                alt="Нажаль фото не відкривається, перевірте підключення до інтернету" />
+              <div class="icons">
+                <a href="#"><i class="icons-link"></i></a>
+              </div>
+              <h3 class="photo-about">КАТЕРИНА</h3>
+              <p class="photo-about">Викладач вокалу</p>
+            </div>
+          </div>
+
+          <div class="photo-container">
+            <div class="photo">
+              <img class="photo-h" src="images/image3.jpg"
+                alt="Нажаль фото не відкривається, перевірте підключення до інтернету" />
+              <h3 class="photo-about">ОЛЬГА</h3>
+              <p class="photo-about">Викладач скрипки</p>
+            </div>
+          </div>
+
+          <div class="photo-container">
+            <div class="photo">
+              <img class="photo-h" src="images/image4.jpg"
+                alt="Нажаль фото не відкривається, перевірте підключення до інтернету" />
+              <h3 class="photo-about">НЕОНІЛА</h3>
+              <p class="photo-about">Викладач гітари</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- PRICES SECTION -->
+
+
+
+    <section id="page-three" class="price-sector">
+      <h1 class="price">ЦІНИ</h1>
+      <div class="price-container">
+        <div class="learn-price">
+          <h2 class="personal-learn">Персональні заняття - 250 грн/година</h2>
+
+          <ul class="plus-personal">
+            <li>
+              Індивідуальний підхід до учня, з урахуванням його особливостей,
+              потреб та можливостей.
+            </li>
+            <li>
+              Можливість глибокого погруження у тему, у випадку коли учень має
+              питання до викладача.
+            </li>
+            <li>
+              Більш ефективне засвоєння матеріалу у випадку коли учень має
+              індивідуальні труднощі з навчанням.
+            </li>
+          </ul>
+
+          <h2 class="group-learn">Групові заняття - 100 грн/година</h2>
+
+          <ul class="plus-group">
+            <li>Можливість обміну ідеями та досвідом з іншими учнями.</li>
+            <li>
+              Підвищення соціальної адаптації та розвитку навичок співпраці та
+              комунікації.
+            </li>
+          </ul>
+          <h2 class="sertificat-about">
+            Подарунковий сертифікат - це чудовий подарунок для тих, хто
+            цікавиться музикою та хоче покращити свої музичні навички.
+          </h2>
+        </div>
+        <div class="price-image">
+          <img class="present-sertifikate" src="images\sertificat1.jpg"
+            alt="Нажаль фото не відкривається, перевірте підключення до інтернету" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Де ми знаходимось? -->
+    <div id="page-four">
+      <h1 class="geolocation-name">Де нас шукати?</h1>
+
+      <div class="geo-container">
+        <div class="geo-photo-con">
+          <img class="geo-photo" src="images/geolocation.jpg"
+            alt="Нажаль фото не відкривається, перевірте підключення до інтернету" />
+        </div>
+
+        <div class="geo-r">
+          <div class="geo-instagram">
+            <h2 class="link-instagram-container">
+              <a class="link-instagram-container" href="https://www.instagram.com/nika._.mus/"
+                target="_blank">НашInstagram (Клікай сюди!)</a>
+            </h2>
+          </div>
+
+          <h2 class="geo-number">
+            <a href="tel:+380 98 972 97 70" class="geo-number">Зателефонувати нам (Клікай сюди!)</a>
+          </h2>
+          <h2 class="adress">Мікрорайон Вараш 43</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2491.913565323656!2d25.842516!3d51.3495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTHCsDIwJzU4LjIiTiAyNcKwNTAnMzMuMSJF!5e0!3m2!1sru!2sua!4v1680931168846!5m2!1sru!2sua"
+            class="map" width="500" height="350" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="welcome-container">
+            <h1 class="welcome">Чекаємо саме на вас!</h1>
+            <h2 class="welcome-txt">З любов'ю NIKA🖤🤍</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+</body>
+
+</html>
