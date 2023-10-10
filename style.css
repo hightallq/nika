@@ -1,9 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Overpass:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-
-@import url(https://fonts.googleapis.com/css?family=EB+Garamond:regular,500,600,700,800,italic,500italic,600italic,700italic,800italic);
-
-@import url(https://fonts.googleapis.com/css?family=Young+Serif:regular);
-
 @import url(https://fonts.googleapis.com/css?family=Vollkorn:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
 
 html {
@@ -11,18 +5,14 @@ html {
 }
 
 body {
-  /* font-family: "Overpass"; */
-  /* font-family: "Young Serif"; */
   font-family: "Vollkorn";
   font-size: 16px;
   line-height: 1.4;
   color: #ffffff;
-  /* overflow-x: hidden; */
-  height: auto;
+  overflow-x: hidden;
   background-color: #141414;
   padding: 0;
   margin: 0;
-  width: 100%;
 }
 
 @media (max-width: 600px) {
@@ -38,13 +28,19 @@ section {
   padding: 50px 0;
 }
 
+
+
+
 /* HEADER SECTION */
 
 
 
+
+header {
+  padding: 0 10px;
+}
 .navbar {
   position: fixed;
-  top: 0;
   width: 100%;
   height: 70px;
   background-color: #000;
@@ -117,22 +113,25 @@ section {
   display: none;
 }
 
-
+main {
+  width: 100%;
+}
 
 /* ABOUT SECTION */
 
 
 
 .about-sector {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 50px 0 0 0;
+  background-color: #fff;
+  color: black;
+  width: 100%;
 }
 
 .about-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .about-photo {
@@ -143,7 +142,7 @@ section {
 }
 
 .about-photo img {
-  width: 1250px;
+  width: 1000px;
 }
 
 @media (max-width: 600px) {
@@ -155,9 +154,7 @@ section {
 .about-text {
   text-align: right;
   font-size: 18px;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  width: 40%;
+  width: 45%;
 }
 
 .about-text h1 {
@@ -178,8 +175,8 @@ section {
 .about-num {
   font-weight: 1000;
   font-size: 20px;
-  background-color: #ffffff;
-  color: #000;
+  background-color: #141414;
+  color: white;
   width: 700px;
 }
 
@@ -196,16 +193,14 @@ section {
 
 
 .team-sector {
-  background-color: #dadada;
-  color: black;
+  color: white;
+  background-color: #141414;
   width: 100vw;
 }
 
 .team-name {
   text-align: center;
-  margin: 0 auto;
   font-size: 3rem;
-  width: 50%;
 }
 
 .team-content {
@@ -230,6 +225,10 @@ section {
 
 .photo {
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .photo-h {
@@ -250,14 +249,16 @@ section {
 
 /* PRICES SECTION */
 
-
+.price-sector {
+  background-color: #fff;
+  color: #000;
+}
 
 .price-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border-bottom: 1px solid rgb(255, 255, 255);
   padding-bottom: 40px;
 }
 
@@ -278,146 +279,125 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: end; */
-  width: 50%;
 }
 
-.plus-personal {
-  padding-top: 5px;
-  padding-left: 25px;
-  font-size: 18px;
-  width: 500px;
-}
-
+.plus-personal,
 .plus-group {
-  padding-top: 5px;
-  padding-left: 25px;
   font-size: 18px;
   width: 500px;
 }
 
-.personal-learn {
-  color: #000;
-  background-color: #fff;
-  border-radius: 12px;
-  text-align: center;
-}
-
+.personal-learn,
 .group-learn {
-  color: #000;
-  background-color: #fff;
+  color: #fff;
+  background-color: #141414;
   border-radius: 12px;
   text-align: center;
 }
 
 .sertificat-about {
   padding-top: 25px;
-  text-align: left;
   width: 600px;
-  text-shadow: 0 0 10px #ffffff;
 }
 
 
 
-/* WELCOME SECTION */
+/* GEO SECTION */
 
-
+.geo-section {
+  background-color: #141414;
+  color: #fff;
+}
 
 .geolocation-name {
-  padding-bottom: 20px;
   text-align: center;
+  font-size: 3rem;
 }
 
 .geo-container {
   display: flex;
-  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .geo-photo {
-  padding-left: 100px;
-  padding-top: 20px;
-  height: auto;
   width: 550px;
 }
 
-.map {
-  padding-top: 50px;
-  align-items: center;
+.geo-header {
+  font-size: 2rem;
+  text-align: right;
 }
 
-.geo-instagram {
-  padding-left: 100px;
-}
-
-.geo-r {
-  margin: 0;
-  position: relative;
-  left: 40px;
-  padding-left: 20px;
-}
-
-.link-instagram-container {
+.geo-insta {
   transition: transform 0.3s;
   text-decoration: none;
-  color: #ffffff;
+  color: rgb(163, 163, 163);
   border-radius: 100px;
+  text-align: right;
+  font-size: 1.3rem;
 }
 
-.link-instagram-container:hover {
+.geo-insta:hover {
   transform: scale(1.05);
-  color: #ffffff;
-}
-
-.geo-instagram {
-  padding-left: 60px;
-  text-align: center;
-  padding-top: 0;
+  color: rgb(163, 163, 163);
 }
 
 .geo-number {
   transition: transform 0.3s;
   text-decoration: none;
-  color: #ffffff;
+  color: rgb(163, 163, 163);
   border-radius: 100px;
-  text-align: center;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  text-align: right;
+  font-size: 1.3rem;
+
 }
 
 .geo-number:hover {
   transform: scale(1.05);
-  color: #ffffff;
+  color: rgb(163, 163, 163);
 }
 
 .adress {
-  text-align: center;
-  padding-left: 110px;
+  text-align: right;
+  color: rgb(163, 163, 163);
+  font-size: 1.3rem;
 }
 
 .map {
-  padding-left: 100px;
-  padding-top: 0px;
+  width: 550px;
+  height: 650px;
 }
 
 .geo-txt {
-  padding-top: 15px;
-  padding-left: 120px;
   text-align: center;
   font-size: 18px;
 }
 
 .welcome {
-  padding-left: 60px;
-  position: relative;
-  left: 20px;
   text-align: center;
-  padding-top: 20px;
+  font-size: 2.5rem;
 }
 
 .welcome-txt {
-  padding-left: 60px;
-  position: relative;
-  left: 40px;
   text-align: center;
+  font-size: 1.3rem;  
+}
+
+
+
+/* FOOTER */
+
+
+
+footer {
+  background-color: #000;
+  border-top: 2px solid white;
+}
+
+.footer-container {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
