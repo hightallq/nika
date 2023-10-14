@@ -6,20 +6,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NIKA Music</title>
-  <script>
-    document.querySelector(".burger").assEventListener("click", function () {
-      this.classList.toggle("active");
-      document.querySelector(".navigation").classList.toggle("open");
-    });
   </script>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" type="image/x-icon" href="images\icon.png" />
+  <script src="/main.js" defer></script>
   <script src="https://kit.fontawesome.com/2e0d7bd826.js" crossorigin="anonymous" defer></script>
-
 </head>
 
-<body>
+<body onload="removeLoader();">
 
+
+  <!-- INTRO -->
+
+
+  <section class="intro-sector sector-padding">
+    <div class="intro-container">
+      <img src="images/about.png" alt="">
+    </div>
+  </section>  
 
 
   <!-- NAVIGATION -->
@@ -38,13 +42,15 @@
         <ul class="navbar-menu">
           <li><a href="#page-one">Про нас</a></li>
           <li><a href="#page-two">Наша команда</a></li>
-          <li><a href="#page-three">Ціни</a></li>
+          <!-- <li><a href="#page-three">Ціни</a></li> -->
           <li><a href="#page-four">Контакти</a></li>
         </ul>
       </div>
-    </div>
-    <div class="burger">
-      <span></span>
+      <div class="burger">
+        <div class="burger-sticks"></div class="burger-sticks">
+        <div class="burger-sticks"></div class="burger-sticks">
+        <div class="burger-sticks"></div class="burger-sticks">
+      </div>
     </div>
   </header>
 
@@ -56,7 +62,7 @@
 
 
 
-    <section class="about-sector">
+    <section class="about-sector sector-no-padding">
       <div class="about-container">
         <div id="page-one" class="about-photo">
           <img src="images/nike.png" alt="Нажаль фото не відкривається, перевірте підключення до інтернету" />
@@ -96,7 +102,7 @@
 
 
 
-    <section id="page-two" class="team-sector">
+    <section id="page-two" class="team-sector sector-padding">
       <h1 class="team-name">НАША КОМАНДА</h1>
       <div class="team-container">
         <div class="team-content">
@@ -148,43 +154,33 @@
 
 
 
-    <section id="page-three" class="price-sector">
-      <h1 class="price">ЦІНИ</h1>
+    <section id="page-three" class="price-sector sector-no-padding">
+      <h1 class="price">ПЕРЕВАГИ</h1>
       <div class="price-container">
         <div class="learn-price">
-          <h2 class="personal-learn">Персональні заняття - 250 грн/година</h2>
+          <h2 class="personal-learn">У нас ви отримаєте:</h2>
 
           <ul class="plus-personal">
             <li>
-              Індивідуальний підхід до учня, з урахуванням його особливостей,
-              потреб та можливостей.
+              Розвиток музичних навичок: вміння грати на музичних іструментах та музикальний слух
             </li>
             <li>
-              Можливість глибокого погруження у тему, у випадку коли учень має
-              питання до викладача.
+              Нові знайомства, серед яких ви зможете знайти чимало близьких друзів
             </li>
             <li>
-              Більш ефективне засвоєння матеріалу у випадку коли учень має
-              індивідуальні труднощі з навчанням.
+              Можливість ще більше розкрити свій творчий потенціал в музичній сфері
+            </li>
+            <li>
+              Ще дужчу любов до музики
             </li>
           </ul>
 
-          <h2 class="group-learn">Групові заняття - 100 грн/година</h2>
-
-          <ul class="plus-group">
-            <li>Можливість обміну ідеями та досвідом з іншими учнями.</li>
-            <li>
-              Підвищення соціальної адаптації та розвитку навичок співпраці та
-              комунікації.
-            </li>
-          </ul>
           <h2 class="sertificat-about">
-            Подарунковий сертифікат - це чудовий подарунок для тих, хто
-            цікавиться музикою та хоче покращити свої музичні навички.
+            Тому, якщо хочеш освоїти чарівний світ музики та розкрити свій творчий потенціал, то приєднуйся до нашої школи, де ти отримаєш неперевершені навички та знання, щоб зробити перші кроки у музичній кар'єрі. Разом ми збудуємо гармонію музики у своєму житті та надихнемо світ навколо!
           </h2>
         </div>
         <div class="price-image">
-          <img class="present-sertifikate" src="images\sertificat1.jpg"
+          <img class="present-sertifikate" src="/images/eminam.png"
             alt="Нажаль фото не відкривається, перевірте підключення до інтернету" />
         </div>
       </div>
@@ -196,7 +192,7 @@
 
 
 
-    <section class="geo-section" id="page-four">
+    <section class="geo-section sector-padding" id="page-four">
       <h1 class="geolocation-name">КОНТАКТИ</h1>
       <div class="geo-container">
         <iframe
@@ -229,7 +225,7 @@
 
   <footer>
     <div class="footer-container">
-      <p>©2022-2023 by Музична студія N.I.K.A </p>
+      <p>©2022-2023 by Музична школа N.I.K.A </p>
       <p>Сайт розроблено amigoboy</p>
     </div>
   </footer>
