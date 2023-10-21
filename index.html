@@ -23,7 +23,7 @@
     <div class="intro-container">
       <img src="images/about.png" alt="">
     </div>
-  </section>  
+  </section>
 
 
   <!-- NAVIGATION -->
@@ -32,25 +32,33 @@
 
   <header class="navbar">
     <div class="container">
+      <!-- navbar-menu -->
+      <div class="burger" onclick="burgerActive()">
+        <div class="burger-sticks"></div class="burger-sticks">
+          <div class="burger-sticks"></div class="burger-sticks">
+            <div class="burger-sticks"></div class="burger-sticks">
+            </div>
+            <div class="navbar-wrap">
+              <ul class="navbar-menu">
+                <li><a href="#page-one">Про нас</a></li>
+                <li><a href="#page-two">Наша команда</a></li>
+                <li><a href="#page-three">Переваги</a></li>
+                <li><a href="#page-four">Контакти</a></li>
+              </ul>
+            </div>
       <div class="navbar-left">
         <div class="navbar-logo">
           <img src="images/footer.jpg" alt="">
         </div>
       </div>
-      <!-- navbar-menu -->
-      <div class="navbar-wrap">
-        <ul class="navbar-menu">
-          <li><a href="#page-one">Про нас</a></li>
-          <li><a href="#page-two">Наша команда</a></li>
-          <!-- <li><a href="#page-three">Ціни</a></li> -->
-          <li><a href="#page-four">Контакти</a></li>
-        </ul>
-      </div>
-      <div class="burger">
-        <div class="burger-sticks"></div class="burger-sticks">
-        <div class="burger-sticks"></div class="burger-sticks">
-        <div class="burger-sticks"></div class="burger-sticks">
-      </div>
+    </div>
+    <div class="side-navbar-wrap">
+      <ul class="side-navbar-menu">
+        <li><a href="#page-one">Про нас</a></li>
+        <li><a href="#page-two">Наша команда</a></li>
+        <li><a href="#page-three">Переваги</a></li>
+        <li><a href="#page-four">Контакти</a></li>
+      </ul>
     </div>
   </header>
 
@@ -114,7 +122,6 @@
               <p class="photo-about">Викладач по фортепіано</p>
             </div>
           </div>
-
           <div class="photo-container">
             <div class="photo">
               <img class="photo-h" src="images/image2.jpg"
@@ -175,13 +182,14 @@
             </li>
           </ul>
 
-          <h2 class="sertificat-about">
-            Тому, якщо хочеш освоїти чарівний світ музики та розкрити свій творчий потенціал, то приєднуйся до нашої школи, де ти отримаєш неперевершені навички та знання, щоб зробити перші кроки у музичній кар'єрі. Разом ми збудуємо гармонію музики у своєму житті та надихнемо світ навколо!
-          </h2>
+          <p class="sertificat-about">
+            Тому, якщо хочеш освоїти чарівний світ музики та розкрити свій творчий потенціал, то приєднуйся до нашої
+            школи, де ти отримаєш неперевершені навички та знання, щоб зробити перші кроки у музичній кар'єрі. Разом ми
+            збудуємо гармонію музики у своєму житті та надихнемо світ навколо!
+          </p>
         </div>
         <div class="price-image">
-          <img class="present-sertifikate" src="images/eminam.png"
-            alt="Нажаль фото не відкривається, перевірте підключення до інтернету" />
+          <img src="/images/eminem.png" alt="Нажаль фото не відкривається, перевірте підключення до інтернету" />
         </div>
       </div>
     </section>
@@ -195,13 +203,10 @@
     <section class="geo-section sector-padding" id="page-four">
       <h1 class="geolocation-name">КОНТАКТИ</h1>
       <div class="geo-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2491.913565323656!2d25.842516!3d51.3495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTHCsDIwJzU4LjIiTiAyNcKwNTAnMzMuMSJF!5e0!3m2!1sru!2sua!4v1680931168846!5m2!1sru!2sua"
-          class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
         <div class="geo-r">
           <h2 class="geo-header">Наші соцмережі:</h2>
-          <p class="geo-insta"> <a class="geo-insta" href="https://www.instagram.com/nika._.mus/">Інстаграм <i class="fa-brands fa-square-instagram"></i></a> </p>
+          <p class="geo-insta"> <a class="geo-insta" href="https://www.instagram.com/nika._.mus/">Інстаграм <i
+                class="fa-brands fa-square-instagram"></i></a> </p>
           <h2 class="geo-header">Ми на зв'язку:</h2>
           <p class="geo-number">
             <a href="tel:+380 98 972 97 70" class="geo-number">Зателефонувати нам <i class="fa-solid fa-phone"></i></a>
@@ -213,6 +218,9 @@
             <p class="welcome-txt">З любов'ю NIKA🖤</p>
           </div>
         </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2491.913565323656!2d25.842516!3d51.3495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTHCsDIwJzU4LjIiTiAyNcKwNTAnMzMuMSJF!5e0!3m2!1sru!2sua!4v1680931168846!5m2!1sru!2sua"
+          class="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
