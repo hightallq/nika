@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Vollkorn:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
 
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
 html {
   scroll-behavior: smooth;
   max-width: 100%;
@@ -151,12 +153,14 @@ main {
   z-index: 10000;
   background-color: #000;
   transform: translateX(-100%);
+  font-family: 'Raleway';
 }
 
 .side-navbar-menu a {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .side-navbar-menu li {
@@ -177,7 +181,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 95vh;
   width: 50%;
   z-index: 10000;
   transform: translateX(0%);
@@ -623,7 +627,7 @@ main {
 .welcome-txt {
   text-align: left;
   font-size: 1.3rem;
-  color: rgb(128, 128, 128);
+  color: #fff;
 }
 
 @media screen and (max-width: 1024px) {
