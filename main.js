@@ -1,13 +1,16 @@
 // Function of loading page
 
 function removeLoader() {
-
     setTimeout(() => {
-        let loader = document.querySelector('.intro-sector');
-        loader.classList.add("hidden");
-    },
-        2000);
+        const loader = document.querySelector('.intro-sector');
+
+        if (loader) {
+            loader.classList.add('hidden');
+        }
+    }, 1000);
 }
+
+window.addEventListener('load', removeLoader);
 
 
 

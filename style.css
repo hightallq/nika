@@ -54,13 +54,15 @@ main {
   align-items: center;
   z-index: 11;
   position: fixed;
-  animation-name: opacity;
-  animation-duration: 3s;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-.hidden {
-  display: none;
-  position: sticky;
+.intro-sector.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .intro-container {
@@ -216,7 +218,8 @@ main {
   }
 
   .navbar {
-    height: 60px
+    height: 60px;
+    width: 100%;
   }
 
   .navbar-logo img {
@@ -251,6 +254,7 @@ main {
   align-items: center;
   justify-content: center;
   width: 550px;
+  /* width: 35vw; */
 }
 
 .about-photo img {
@@ -277,12 +281,17 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
+.about-container {
+    flex-direction: column-reverse;
+  }
+
   .about-photo {
     width: 500px;
   }
 
   .about-text {
     font-size: 1rem;
+    text-align: center;
   }
 }
 
@@ -415,7 +424,7 @@ main {
 
 .price-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 0 20px;
 }
@@ -433,7 +442,8 @@ main {
 }
 
 .price-image img {
-  max-width: 450px;
+  /* max-width: 450px; */
+  max-width: 25vw;
 }
 
 .learn-price {
@@ -463,6 +473,10 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
+  .price-container {
+    flex-direction: column;
+  }
+
   .price-image img {
     max-width: 350px;
   }
@@ -737,17 +751,6 @@ footer {
 
 /* ANIMATION */
 
-
-
-@keyframes opacity {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
 
 @keyframes sidebar-open {
   0% {
